@@ -1,0 +1,961 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai&display=swap');
+
+.student-dashboard {
+  align-items: flex-start;
+  display: flex;
+  max-height: 832px;
+  width: calc(100% - 180px);
+  margin-left: 180px;
+  box-sizing: border-box;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.student-dashboard  {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 
+
+
+.student-dashboard .overlap-group13-item {
+  height: 32px;
+  margin-left: 1.53px;
+  margin-top: 41px;
+  width: 33px;
+} */
+
+.student-dashboard .left-container {
+  flex-direction: column;
+  position: relative;
+  gap: 12px;  
+}
+
+.student-dashboard .welcomeFrame {
+  height: 150px;
+  position: relative;
+  width: 650px;
+  margin-bottom: 25px;
+  
+}
+
+.student-dashboard .rectangle-welcomeFrame {
+  background-color: var(--gray-nurse);
+  border-radius: 14px;
+  height: 135px;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  width: 650px;
+  
+}
+
+.student-dashboard .greet-sentence {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  left: 49px;
+  min-height: 105px;
+  position: absolute;
+  top: 46px;
+  width: 263px;
+}
+
+.student-dashboard .title {
+  color:#751F1F;
+  font-family: 'Baloo Bhai',sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 54px;
+  width: 259px;
+}
+@media (min-width: 1200px) {
+  .student-dashboard .title  {
+      font-size: 2.2rem ;
+     font-size: calc(1rem + 1.3vw);
+  }
+}
+
+
+.student-dashboard .ready-to-flash-your-courses {
+  color: var(--black);
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 0.05px;
+  min-height: 47px;
+  transform: rotate(0.14deg);
+  width: 164px;
+}
+
+.student-dashboard .illustration {
+  height: 161px;
+  left: 419px;
+  position: absolute;
+  top: 0;
+  width: 131px;
+ 
+
+}
+
+.student-dashboard .iconGold {
+  height: 35px;
+  left: 18px;
+  position: absolute;
+  top: 52px;
+  width: 35px;
+  
+
+
+}
+#iconALT{
+  height: 33px;
+  width: 33px;
+  margin-left: -0.3rem;
+}
+
+
+
+
+/********* START COURSES SECTION *************/
+
+
+
+.coursesTitel{
+color: #751F1F;
+  
+}
+/* .student-dashboard .courses-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  max-width: 100%; 
+  overflow: hidden; 
+  width: 650px; 
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+
+} */
+
+/* .student-dashboard .titels {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-height: 68px;
+  width: 217px;
+
+}
+
+.student-dashboard .coursesText {
+  color: #751F1F;
+  font-family: 'Baloo Bhai',sans-serif;
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 40px;
+  width: 89px;
+}
+
+.student-dashboard .options {
+  gap: 28px;
+  height: 27px;
+  min-width: 211px;
+  margin-bottom: 10px;
+}
+
+.student-dashboard .all-courses-option {
+  font-family: 'Baloo Bhai',sans-serif;
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 27px;
+  width: 82px;
+  
+}
+
+.student-dashboard .the-recent-option {
+  font-family: 'Baloo Bhai',sans-serif;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 27px;
+  font-size: 1rem;
+  
+  width: 101px;
+
+
+}
+.tab {
+  font-family: 'Baloo Bhai', sans-serif;
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  text-decoration: none;
+  color: #bcbcbc; 
+  padding: 5px 10px;
+  border-bottom: 3px solid transparent; 
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+.tab:hover {
+  color: #751F1F; 
+  border: 3px solid #751F1F;
+  
+  
+}
+
+.tab.active {
+  font-weight: bold;
+  color: #9A2828;
+  border-bottom: 3px solid #751F1F;
+}
+
+ */
+
+/* .student-dashboard .course1 {
+  align-items: center;
+  background-image: url(../img/rectangle-7.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 83px;
+  margin-top: 9px;
+  min-width: 623px;
+  padding: 8.3px 8.5px;
+} */
+
+/* Rectangle 7 */
+/* 
+
+.student-dashboard .course-name {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-size: 16px;
+    font-weight: 380; 
+    color: black;
+    line-height: normal;
+    min-width: 175px;
+    margin-left: 12px;
+}
+
+
+
+
+.student-dashboard .text {
+  align-self: flex-end;
+  color: var(--black);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+  min-height: 16px;
+  width: 18px;
+}
+
+.student-dashboard .overlap-group {
+  align-items: flex-end;
+  background-color: var(--clairvoyant);
+  border-radius: 8px;
+  display: flex;
+  height: 42px;
+  justify-content:center;
+  margin-bottom: 0.11px;
+  margin-left: 30px;
+  min-width: 100px;
+  padding: 13.0px 24.0px;
+} */
+
+.student-dashboard .course {
+ 
+ 
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background: #EAE8E8;
+  border-radius: 14px;
+  box-shadow: 2px 3px rgb(206, 205, 205);
+  width: 100%; 
+  max-width: 650px; 
+  padding: 10px 12px;
+  box-sizing: border-box; 
+  margin-bottom: 20px; 
+
+
+
+}
+
+
+.student-dashboard .caption {
+  font-weight: 600;
+}
+
+.student-dashboard .sectionContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 5px;
+  /* margin-left: 50px;  */
+  /* max-width: 150px;  */
+
+}
+
+.student-dashboard .vector {
+  height: 23px;
+  width: 23px;
+}
+
+
+/* 
+.student-dashboard .rating {
+  align-items: flex-start;
+  display: flex;
+  gap: 6px;
+  width: 70px;
+  margin-left: 50px;
+
+ 
+} */
+
+/* 
+.view-course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.view-course-btn {
+
+  background-color: #9A2828; 
+  color: #FFFFFF; 
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  max-width: 15%; 
+}
+/* 
+.view-course-btn a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.view-course-btn:hover {
+  background-color: #751F1F;
+  transform: scale(1.05);
+}
+
+
+.error-message {
+    display: inline-block;  
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+  
+  
+}
+
+
+/********* END COURSES SECTION *************/
+
+
+
+
+.student-dashboard .right-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+}
+
+
+
+
+.student-dashboard .Motiv-Container {
+  
+  background-color: var(--gray-nurse);
+  border-radius: 14px;
+  box-shadow: 2px 3px rgb(206, 205, 205);
+
+}
+
+.student-dashboard .icon-1,.icon-2 {
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0; 
+}
+
+.student-dashboard .icon-2 {
+  /* height: 32px;
+  width: 32px;
+  flex-shrink: 0;  */
+  stroke: 1.7;
+  margin-top: -0.7rem;
+} 
+.student-dashboard .Motiv-sentence {
+  color: #751F1F;
+  
+}
+
+
+
+
+
+/*** START OF STATISTICS  ***/
+/* .student-dashboard .stat-container {
+  height: 483px;
+  margin-left: 1.75px;
+  margin-top: 6px;
+  position: relative;
+  width: 440px;
+} */
+/* 
+.student-dashboard .your-statistics-section {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 383px;
+  position: absolute;
+  top: 100px;
+  width: 440px;
+  margin: 30px 0;
+} */
+
+.student-dashboard .your-statistics {
+  color: #751F1F;
+   font-family: 'Baloo Bhai', sans-serif; 
+  
+}
+/* 
+.student-dashboard .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 27px;
+  margin-top: 10px;
+  min-width: 426px;
+}
+
+.student-dashboard .learning-hours {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-baloo_bhai-regular);
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 27px;
+  width: 123px;
+}
+
+.student-dashboard .flashcards-added {
+  margin-left: 8px;
+  min-height: 20px;
+  width: 139px;
+}
+
+.student-dashboard .flashcards-viewed {
+  margin-left: 14px;
+  margin-top: 0.06px;
+  min-height: 22px;
+  width: 142px;
+}
+
+.student-dashboard .line {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 0;
+  margin-top: 34px;
+  min-height: 277px;
+  width: 458px;
+}
+
+.student-dashboard .number-1 {
+  color: var(--black);
+  font-weight: 400;
+  left: 3px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 228px;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.student-dashboard .number-2 {
+  color: var(--black);
+  font-weight: 400;
+  left: 3px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 181px;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.student-dashboard .overlap-group1 {
+  height: 59px;
+  left: 376px;
+  position: absolute;
+  top: 95px;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-2 {
+  background-image: url(../img/sheet.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group2 {
+  height: 59px;
+  left: 313px;
+  position: absolute;
+  top: 47px;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-3 {
+  background-image: url(../img/sheet-2.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group3 {
+  height: 59px;
+  left: 255px;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-4 {
+  background-image: url(../img/sheet-4.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group4 {
+  height: 59px;
+  left: 197px;
+  position: absolute;
+  top: 142px;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-5 {
+  background-image: url(../img/sheet-6.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group5 {
+  height: 59px;
+  left: 132px;
+  position: absolute;
+  top: 72px;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-6 {
+  background-image: url(../img/sheet-8.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group6 {
+  height: 59px;
+  left: 67px;
+  position: absolute;
+  top: 118px;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-7 {
+  background-image: url(../img/sheet-10.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .overlap-group-8 {
+  background-image: url(../img/sheet-12.svg);
+  background-size: 100% 100%;
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 81px;
+}
+
+.student-dashboard .number-3 {
+  color: var(--black);
+  font-weight: 400;
+  left: 3px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 140px;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.student-dashboard .number-4 {
+  color: var(--black);
+  font-weight: 400;
+  left: 3px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 93px;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.student-dashboard .number-5 {
+  color: var(--black);
+  font-weight: 400;
+  left: 3px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 47px;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.student-dashboard .number-6 {
+  color: var(--black);
+  font-weight: 400;
+  left: 3px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 0;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.student-dashboard .flex-row-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 12px;
+  margin-right: 20.21px;
+  min-width: 401px;
+}
+
+.student-dashboard .place {
+  color: var(--black);
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 40px;
+  min-height: 12px;
+  white-space: nowrap;
+} */
+
+
+
+
+/*** START OF STATISTICS  ***/
+
+/* 
+.student-dashboard .stats-boxes {
+  align-items: flex-start;
+  display: flex;
+  gap: 23px;
+  height: 108px;
+  left: 7px;
+  min-width: 427px;
+  position: absolute;
+  top: 0;
+} */
+
+.student-dashboard .statContainer {
+  /* align-self: flex-start; */
+  background-color: var(--gray-nurse);
+  color: #7B1B1B;
+
+  /* border-radius: 14px;
+  height: 100px;
+  margin-bottom: 0;
+  position: relative;
+  width: 200px; */
+
+  /* display: flex;               
+  justify-content: center;     
+  align-items: center;         Center vertically */
+  box-shadow: 2px 3px rgb(206, 205, 205);
+  font-family: 'Baloo Bhai 2', sans-serif; 
+
+
+}
+/* 
+.student-dashboard .values {
+  display: flex;
+  flex-direction: row;
+  align-items: center;         
+  justify-content: center;     
+  gap: 14px;
+  height: 100%;                
+  width: 90%;
+} */
+/* 
+.student-dashboard .theNo {
+  font-family: 'Baloo Bhai', sans-serif; 
+  font-weight: 400;
+  font-size: 64px;
+  color: #751F1F;
+  line-height: normal;
+  height: auto;
+  width: auto;
+}
+
+.student-dashboard .text {
+  font-family: 'Baloo Bhai 2', sans-serif; 
+  font-weight: 300;
+  font-size: 20px;
+  color: #7B1B1B;
+  line-height: 24px;
+  width: 80px;                 
+  text-align: center;         
+  white-space: normal;    
+  height: auto;              
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+.student-dashboard .number-8 {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 72px;
+  width: 37px;
+}
+
+
+.student-dashboard .pending-flashcards {
+  align-self: center;
+  color: var(--black);
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8.76px;
+  min-height: 45px;
+  width: 96px;
+}
+.dashboard-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 70px;
+} */
+
+/* .quickAddContainer,
+.favoritesContainer {
+  background-color: var(--gray-nurse);
+  border-radius: 14px;
+  height: 150px;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 3px rgb(206, 205, 205);
+  cursor: pointer;
+  text-align: center;
+} */
+
+
+
+
+/* 
+.favoritesContainer h2 {
+  font-size: 22px;
+  font-family: 'Baloo Bhai', sans-serif;
+  color: #751F1F;
+  margin-bottom: 5px;
+}
+
+.favoritesContainer span {
+  font-size: 18px;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  color: #7B1B1B;
+} */
+/* 
+.student-dashboard .quickAddContainer h2 {
+  font-size: 20px;
+  font-family: 'Baloo Bhai', sans-serif;
+  color: #751F1F;
+  margin: 0;
+}
+
+.student-dashboard .quickAddContainer svg {
+  width: 50px;
+  height: 50px;
+  stroke: #9A2828; 
+  fill:white;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.student-dashboard .quickAddContainer svg:hover {
+  transform: scale(1.3);
+  fill: #9A2828; 
+  stroke:white;
+}
+ */
+
+
+
+#flashcardStatsChart {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px;
+  background-color: var(--gray-nurse);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 2px 3px rgb(206, 205, 205);
+}
+
+.stats-toggle{
+  margin-top: 10px;
+}
+.stats-toggle button  {
+  background-color: var(--black-haze);
+
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+opacity: 0.5;
+}
+
+.stats-toggle button.active {
+  background-color: #9A2828;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  opacity: 1;
+
+}
+
+
+/* 
+.favoritesContainer svg {
+  width: 50px;
+  height: 50px;
+  align-self:center;
+  fill: white;
+  margin-top: 5px; 
+  transition: transform 0.5s ease;
+
+
+
+} */
+
+
+
+/*** Quick Actions ***/
+
+
+.quickAction {
+  background-color: var(--gray-nurse);
+
+  box-shadow: 2px 3px rgba(0,0,0,0.1);
+  transition: transform .2s, box-shadow .2s;
+  cursor: pointer;
+
+}
+
+
+.quickAction svg{
+  width: 50px;
+  height: 50px;
+  fill: white;
+  transition: transform 0.5s ease;
+
+}
+/* 
+.favoritesContainer svg:hover {
+  fill: #751F1F;
+  transform: scale(1.3);
+
+} */
+
+
+.quickAction h3 {
+  color: #751F1F;
+
+  font-family: 'Baloo Bhai', sans-serif;
+
+}
+
+.quickAction:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 6px rgba(0,0,0,0.15);
+}
+
+.quickAction:hover svg.add{
+  fill: #751F1F;
+  transform: scale(1.2);
+stroke:white;
+
+
+}
+.quickAction:hover svg.fav {
+
+  fill: #9A2828; 
+    transform: scale(1.2);
+  transition: transform .2s, stroke .2s;
+}
+
+
+@media (min-width: 1200px) {
+  #flashcardStatsChart {
+    height: 320px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .student-dashboard { margin-left: 0; }
+}

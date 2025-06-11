@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai&display=swap');
+
+.followFlashcards{
+ align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+
+  background-color: var(--black-haze);
+  display: flex;
+  height: 832px;
+  max-height: 832px;
+  width: calc(100% - 150px) !important;
+  margin-left: 150px !important;
+  box-sizing: border-box;
+   padding: 10px 0px; 
+}
+.back-arrow-link svg {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  margin-bottom: -4rem;
+  opacity: 0.6;
+}
+.back-arrow-link svg:hover {
+  fill: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58, 58) 100%);
+  stroke: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58, 58) 100%);;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.titels{
+
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 8rem;
+  
+  }
+.keep-flashin-smart-add-a-card {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(189.13, 53.58, 53.58) 75%, rgb(87.13, 24.68, 24.68) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Baloo Bhai',sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: -4px;
+  min-height: 44px;
+  text-align: center;
+  justify-self: center;
+  white-space: nowrap;
+  width:fit-content;
+}
+
+.submit-your-sentense {
+  
+  color: #5f1717;
+  font-family: 'Baloo Bhai 2',sans-serif;
+  font-size:36px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 28px;
+  justify-self: center;
+  text-align: center;
+}
+
+.titel-content {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58, 58) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Baloo Bhai', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -0.62px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+
+
+.card-container {
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: auto;
+  padding: 12px 5px 12px 12px;
+  position: relative;
+  width: 565px;
+}
+
+ .group-name {
+  height: 75px;
+  position: relative;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.flashcard-total-no {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(154, 40, 40) 0%, rgb(52, 13.51, 13.51) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Baloo Bhai 2',sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  top: 32px;
+  white-space: nowrap;
+  width: 550px;
+}
+
+.group-titel {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58.03, 58.03) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Baloo Bhai',sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: -0.62px;
+  line-height: 38px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+.flashcardClick{
+  height: 100%;
+  top: 17px;
+  width: 100%;
+}
+
+/* .flashcard .answerContainer {
+  background-image: url(../imgFlashcard/a-card.svg);
+  top: 9px;
+} */
+
+.QA-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: auto;
+  width: 100%;
+  justify-content: space-between; 
+}
+ .A-container {
+  align-items: flex-start;
+  background-image: url(../imgFlashcard/a-card.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 380px;
+  min-width: 530px;
+  width: 100%;
+  padding: 40px 40px;
+  position: absolute;
+  overflow: visible; 
+}
+
+
+ .answer {
+  color: #9A2828;
+  font-family: 'Baloo Bhai', sans-serif;
+  font-size: clamp(18px, 2.8vw, 28px); 
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 95%;
+}
+
+/* .flashcard .questionContainer {
+  background-image: url(../imgFlashcard/q-card.svg);
+  top: -9px;
+} */
+
+ .Q-container {
+  align-items: flex-start;
+  background-image: url(../imgFlashcard/q-card.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 380px;
+  min-width: 530px;
+  width: 100%;
+  padding: 40px 40px;
+  position: absolute;
+  overflow: visible; 
+
+}
+
+
+ .question {
+  color: var(--white);
+  font-family: 'Baloo Bhai',sans-serif;
+  font-size: clamp(18px, 2.5vw, 33px); 
+  font-weight: 400;
+  max-height: 300px;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+  width: 100%;
+  margin-top: 70px;
+
+  overflow-y: auto;
+  max-height: 95%;
+  
+
+  
+
+}
+
+
+
+
+ .answer,
+ .question {
+  max-height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  line-height: 1.4;
+}
+
+ .answer::-webkit-scrollbar {
+  width: 8px;
+}
+
+ .answer::-webkit-scrollbar-thumb {
+  background-color: #9A2828;
+  border-radius: 8px;
+}
+
+ .next_-previous_-section {
+  height: 40px;
+  position: relative;
+  width: 520px;
+  align-items: flex-start;
+  display: flex;
+  min-width: 520px;
+  gap: 12px; 
+  margin-top: -4rem;
+
+}
+
+ .flex-row-2 {
+  min-width: 522px;
+}
+
+ .previous-vector {
+  height: 38px;
+  margin-top: 0.16px;
+  width: 40px;
+  cursor: pointer;
+
+}
+.previous-vector:hover{
+  fill: #9A2828;
+}
+
+ .flashcard-total-No {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(154, 40, 40) 52%, rgb(52, 13.51, 13.51) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Baloo Bhai',sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  height: 40px;
+  letter-spacing: 0;
+  line-height: 54px;
+  margin-left: 165px;
+  text-align: center;
+  white-space: nowrap;
+  width: 111px;
+  flex-grow: 0.2;
+}
+
+
+ .next-vector {
+  height: 38px;
+  margin-left: 166px;
+  margin-top: 0.16px;
+  width: 40px;
+  cursor: pointer;
+}
+.next-vector:hover{
+  fill: #9A2828;
+}
+
+.no-hover:hover {
+  pointer-events: none;
+  background-color: inherit;
+
+fill: currentColor;
+  cursor: none;
+}
+.no-hover {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
+
+.answerArea,.questionArea {
+      color: #9A2828;
+      font-family: 'Baloo Bhai',sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      height: 270px;
+      letter-spacing: 0;
+      line-height: 36px;
+      text-align: center;
+      padding-top: 40px; 
+      width: 100%;
+    
+      background: transparent;    
+      border: none;              
+      outline: none;            
+      width: 100%;                
+      resize: none;                
+      padding: 10px;             
+    
+    }
+    textarea.questionArea::placeholder {
+      color: #aaaaaa; 
+      font-style: italic; 
+    }
+    
+    textarea.answerArea::placeholder{
+      color: #a4000084; 
+      font-style: italic; 
+    
+    }
+
+    .questionArea {
+      color: var(--white);
+    
+    }
+    
+
+
+
+
+
+    .why-feedback-btn {
+      background-color: transparent;
+      color: #9A2828;
+      border: none;
+      font-size: 18px;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 20px;
+      justify-self: center;
+    }
+    .why-feedback-btn:hover {
+      color: #b53b3b;
+    }

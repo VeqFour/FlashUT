@@ -1,0 +1,732 @@
+#addGroupForm {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+          .edit-input {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+    }
+          #addGroupBtn {
+      background-color: white;      
+      border: 2px solid #9A2828;    
+      border-radius: 50px;
+      padding: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    
+    #addGroupBtn svg {
+      width: 44px;
+      height: 44px;
+      stroke: #9A2828;       
+      fill: none;           
+    }
+          .created-by-admin {
+      display: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Baloo Bhai 2', sans-serif;
+      text-align: center;
+    }
+          .edit-input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+          .modeBtn {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      width: fit-content;
+      position: relative; 
+      bottom: 4px;        
+      left: 0;          
+      padding: 10px 0;  
+      background-color: #9A2828;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 8px;
+    
+    }
+    
+    .flip-container {
+      width: 600px;
+      height: 100%;
+      
+    }
+    
+    .flipper {
+      transition: transform 0.8s ease;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    
+    .front, .back {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      
+    }
+    
+    .front {
+      z-index: 2;
+    }
+    
+    .back {
+      transform: rotateY(180deg);
+      z-index: 1;
+    }
+    .flashcardClick.flipped {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-container.flipped .flipper {
+      transform: rotateY(180deg);
+    }
+    
+    
+    
+    
+    
+    .groupSection {
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      height: auto;
+      position: relative;
+      width: 500px;
+    }
+    
+    .modeSection{
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      height: auto;
+      position: relative;
+    }
+    
+    .groupSection.Assign {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;   
+      align-items: flex-start;
+      gap: 30px;
+      width: 100%;
+      max-width: 100%;         
+      margin: 0 auto;            
+    }
+    
+     .cardContainer_review {
+      box-shadow: inset 0px 4px 4px #00000040, inset 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+      height: 300px;
+      width: 225px;
+      max-width: 225px;
+      position: relative;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 12px;
+      flex-direction: column;
+    
+      
+    }
+    
+    
+    .cardContainer {
+      box-shadow: inset 0px 4px 4px #00000040, inset 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+      height: 275px;
+      width: 225px;
+      max-width: 225px;
+      position: relative;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 12px;
+      flex-direction: column;
+    
+      
+    }
+    .faviorateIcon {
+      position: absolute;
+      top: 10px;  
+      right: 10px; 
+      width: 24px; 
+      height: 24px; 
+      cursor: pointer; 
+    }
+    
+    .cardItems_review {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      align-items: center;
+      /* padding-top: 25px; */
+      height: auto; 
+      gap: 20px;
+      width: auto;
+      max-width: 100%;
+    
+    
+    }
+    
+    .cardItems{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      align-items: center;
+      padding-top: 25px;
+      height: 200px; 
+      gap: 15px;
+      width: auto;
+      max-width: 100%;
+    
+    
+    }
+    /* 
+    #NoOfPending {
+        font-size: 20px;
+        font-weight: bold;
+        color: #9A2828;
+        margin-top: 20px;
+        display: block;
+    } */
+    
+    
+    .groupName_review {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58.03, 58.03) 100%);
+      background-clip: text;
+      text-align: center;
+      word-wrap: break-word;
+      overflow: hidden;
+    
+      text-overflow: ellipsis;
+      max-width: 100%;
+      
+      font-family: 'Baloo Bhai', sans-serif;
+      font-size: clamp(12px, 5vw, 25px); 
+      font-weight: normal;
+      line-height:32px;
+      margin-bottom:0;
+    }
+    
+    
+    
+    .groupName {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58.03, 58.03) 100%);
+      background-clip: text;
+      text-align: center;
+      word-wrap: break-word;
+      overflow: hidden;
+    
+      text-overflow: ellipsis;
+      max-width: 100%;
+      
+      font-family: 'Baloo Bhai', sans-serif;
+      font-size: clamp(12px, 5vw, 25px); 
+      font-weight: normal;
+      line-height:32px;
+    }
+    
+    
+     .bottomPart,.sectionInfo {
+     
+      align-items: center;
+      justify-items: center;
+      overflow: hidden;
+      max-width: 100%;
+      width: auto;
+      padding: 5px;
+    }
+    
+     .NoOfFlashcards {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(154, 40, 40) 0%, rgb(52, 13.51, 13.51) 100%);
+      background-clip: text;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      padding: 0.1rem;
+      
+      font-family: 'Baloo Bhai 2', sans-serif;
+      font-size: clamp(12px, 3vw, 22px); 
+      font-weight: 400;
+    }
+    .academic_ID{
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: clamp(10px, 3vw, 12px); 
+      font-weight: 400;
+      line-height: 1.6;  
+      display: block;    
+    
+    
+    }
+    
+    .sectionName{
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: clamp(10px, 3vw, 12px); 
+      font-weight: 400;
+      line-height: 1.2;  
+      display: block;    
+    
+    }
+    .display-button {
+      display: flex;
+      align-items: center;
+      font-family: 'Baloo Bhai 2', sans-serif;
+      font-size: 18px;
+      justify-content: center;
+      background-color: #9A2828;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 8px 15px;
+      cursor: pointer;
+      gap: 8px;
+      width: 100%; 
+      margin-top: auto; 
+      align-items: center;
+      justify-items: center;
+      overflow: hidden;
+      max-width: 100%;
+      width: auto;
+      
+    }
+    
+    .flashing-button svg {
+      width: 22px;
+      height: 22px;
+      align-self:center;
+      fill: white;
+    
+    }
+    
+    .flashing-button:hover {
+      background-color: #751F1F;
+    }
+    #CourseContainerGroups .view-course-button {
+      position: relative;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      font-family: 'Baloo Bhai 2', sans-serif;
+      font-size: 18px;
+      justify-content: center;
+      background-color: #9A2828;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px 15px;
+      cursor: pointer;
+      white-space: nowrap;
+      margin-top: auto;
+      justify-self: center;
+    }
+    
+    #CourseContainerGroups .view-course-button:hover {
+      background-color: #751F1F;
+    }
+    .add-flashcard1 .flex-row {
+      display: flex;
+      align-items: flex-start; 
+      justify-content: center; 
+      gap: 30px;                
+      width: 100%;
+      flex-wrap: wrap; 
+      margin-top:0 ;        
+    }
+    
+    .trashIcon2{
+    position: relative;
+    text-align: center;
+    
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+    }
+    
+    
+    .trashIcon{
+    position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .editIcon{
+    position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    
+     .card-container {
+      align-items: center;
+      background-color: #f6f6f6;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      height: 550px;
+      padding: 12px 5px 12px 12px;
+      position: relative;
+      width: 565px;
+    }
+    
+    .group-name {
+      height: 90px;
+      justify-self: center;
+      position: relative;
+      width: 100%;
+      justify-items: center;
+      align-items: center;
+    }
+    
+    .choiceTitel{
+          -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58.03, 58.03) 100%);
+      background-clip: text;
+      text-align: center;
+      word-wrap: break-word;
+      overflow: hidden;
+    
+      text-overflow: ellipsis;
+      max-width: 100%;
+      padding: 5px;
+      
+      font-family: 'Baloo Bhai', sans-serif;
+      font-size: clamp(12px, 5vw, 28px); 
+      font-weight: normal;
+      line-height:32px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.6;
+    
+    
+    }
+    
+    .card{
+      border: none !important;
+      margin-top: 4rem;
+      
+    }
+    .choiceTitel:hover{
+          opacity: 1;
+    
+    }
+    
+     .flashcard-total-no {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(154, 40, 40) 0%, rgb(52, 13.51, 13.51) 100%);
+      background-clip: text;
+      color: transparent;
+      font-family: 'Baloo Bhai 2',sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      left: 0;
+      letter-spacing: 0;
+      line-height: 42px;
+      position: absolute;
+      text-align: center;
+      top: 32px;
+      white-space: nowrap;
+      width: 550px;
+    }
+    
+     .group-titel {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(117, 31, 31) 0%, rgb(219, 58.03, 58.03) 100%);
+      background-clip: text;
+      color: transparent;
+      font-family: 'Baloo Bhai',sans-serif;
+      font-size: 42px;
+      font-weight: 400;
+      left: 0;
+      letter-spacing: -0.62px;
+      line-height: 38px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      white-space: nowrap;
+      width: 100%;
+      height: auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .flashcardClick{
+      height: 100%;
+      top: 17px;
+      width: 100%;
+    }
+    
+    
+     .QA-section {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      height: auto;
+      width: 100%;
+      justify-content: space-between; 
+    }
+    .A-container {
+      align-items: flex-start;
+      background-image: url(../imgFlashcard/a-card.svg);
+      background-size: 100% 100%;
+      display: flex;
+      height: 380px;
+      min-width: 530px;
+      width: 100%;
+      padding: 40px 40px;
+      position: absolute;
+    }
+    
+    
+     .answer {
+      color: #9A2828;
+      font-family: 'Baloo Bhai',sans-serif;
+      font-size: clamp(18px, 2.5vw, 33px); 
+      font-weight: 400;
+      max-height: 300px;
+      letter-spacing: 0;
+      line-height: 36px;
+      text-align: center;
+      width: 100%;
+    overflow-y: auto;
+                  
+     
+    }
+    
+    /* .flashcard .questionContainer {
+      background-image: url(../imgFlashcard/q-card.svg);
+      top: -9px;
+    } */
+    
+    .Q-container {
+      align-items: flex-start;
+      background-image: url(../imgFlashcard/q-card.svg);
+      background-size: 100% 100%;
+      display: flex;
+      height: 380px;
+      min-width: 530px;
+      width: 100%;
+      padding: 40px 40px;
+      position: absolute;
+    }
+    
+    
+     .question {
+      color: var(--white);
+      font-family: 'Baloo Bhai',sans-serif;
+      font-size: clamp(18px, 2.5vw, 33px); 
+      font-weight: 400;
+      max-height: 300px;
+      letter-spacing: 0;
+      line-height: 36px;
+      text-align: center;
+      width: 100%;
+      margin-top: 70px;
+    
+      
+    
+    }
+    
+     .next_-previous_-section {
+      height: 40px;
+      position: relative;
+      width: 524px;
+      align-items: flex-start;
+      display: flex;
+      min-width: 522px;
+      gap: 12px; 
+      margin-bottom: -40px;
+    
+    
+    }
+    
+    .next_-previous_-sectionG{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      width: 100%;
+      padding: 0 20px; 
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+    .decision {
+      height: 50px;
+      position: relative;
+      width: 350px;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;            
+      margin-bottom: -40px;
+    }
+    .accept,
+    .reject{
+      height: 38px;
+      margin-top: 0.16px;
+      font-size: 26px;
+      cursor: pointer;
+      color: #5f1717;
+      background-clip: text;
+      font-family: 'Baloo Bhai',sans-serif;
+      -webkit-background-clip: text ;
+      border: none;
+      opacity: 0.6;
+      transition: all 0.3s ease; 
+      
+    
+    
+    
+    
+    }
+    .accept:hover,
+    .reject:hover{
+    
+      color: #5f1717;
+      scale: 1.3;
+      opacity: 1;
+    
+    }
+    
+     .flex-row-2 {
+      min-width: 522px;
+    }
+    
+    .previous-vector {
+      height: 38px;
+      margin-top: 0.16px;
+      width: 40px;
+      cursor: pointer;
+    
+    }
+    .previous-vector:hover,.previous-vectorG:hover{
+      fill: #9A2828;
+    }
+    
+     .flashcard-total-No {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(180deg, rgb(154, 40, 40) 52%, rgb(52, 13.51, 13.51) 100%);
+      background-clip: text;
+      color: transparent;
+      font-family: 'Baloo Bhai',sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      height: 40px;
+      letter-spacing: 0;
+      line-height: 54px;
+      margin-left: 165px;
+      text-align: center;
+      white-space: nowrap;
+      width: 111px;
+      flex-grow: 0.2;
+    }
+    .next-vector {
+      height: 38px;
+      margin-left: 166px;
+      margin-top: 0.16px;
+      width: 40px;
+      cursor: pointer;
+    }
+    .next-vectorG,.previous-vectorG{
+      height: 38px;
+      width: 40px;
+      cursor: pointer;
+      transition: fill 0.2s ease;
+    
+    }
+    .next-vector:hover,.next-vectorG:hover{
+      fill: #9A2828;
+    }
+    
+    .no-hover:hover {
+      pointer-events: none;
+      background-color: inherit;
+    
+    fill: currentColor;
+      cursor: none;
+    }
+    .no-hover {
+      opacity: 0.6;
+      pointer-events: none; 
+    }
+    .review-load-more-btn {
+      position: absolute;      
+      margin-top: 40px;
+      left: 53%;
+      transform: translateX(-50%);
+      display: block;
+      border: none;
+      font-family: 'Baloo Bhai', sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      padding: 8px 20px;
+    }
+    
+    
+    .optionCard {
+        background-color: #fff;
+        border: 2px solid #9A2828;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer; 
+    }
+    
+    .optionCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    
+    .optionCard:hover .choiceTitel {
+        opacity: 1;
+        text-decoration: underline;  
+    }
+    .optionIcon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 10px;
+    }
+    
+    .badgePending {
+        background-color: #9A2828;
+        color: white;
+        border-radius: 50%;
+        padding: 6px 12px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        display: inline-block;
+    }

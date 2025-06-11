@@ -1,0 +1,134 @@
+/* 
+
+.login-page {
+  align-items: flex-start;
+  background-color: var(--black-haze);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 832px;
+  padding: 16px 27px;
+  width: 1280px;
+}
+
+.login-page .header {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  height: 300px;
+}
+
+.login-page .logo {
+  height: 84px;
+  object-fit: cover;
+  width: 350px;
+}
+
+
+.login-page .ready-to-flash-Titel {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #C4332F 66%, #5E1817 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-family-baloo_bhai-regular);
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 2.50px;
+  line-height: normal;
+  min-height: 160px;
+  min-width: 500px;
+  text-align: center;
+}
+
+.login-page .login-form {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  height: 450px;
+  justify-content: center;
+  position: relative;
+  width: 700px;
+}
+
+.login-page .login {
+  background: linear-gradient(180deg, #C4332F 69.5%, #5E1817 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+    font-family: var(--font-family-baloo_bhai-regular);
+  font-size: 48px;
+  font-weight: 400;
+  left: 285px;
+  letter-spacing: 2.40px;
+  line-height: normal;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+
+}
+
+
+
+.login-page .inputfield {
+  align-items: flex-start;
+  background-color: var(--gray-nurse-2);
+  border-radius: 15px;
+  display: flex;
+  height: 64px;
+  min-width: 350px;
+  padding: 20.5px 30px;
+  margin-bottom: 25px;
+}
+
+
+.login-page .submitButton {
+  align-items: flex-start;
+  background-color: #A42927;
+  border-radius: 15px;
+  border-color: #A42927;
+  display: block;
+  height: 50px;
+  justify-content: center;
+  min-width: 350px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+
+.login-page .ifLogin {
+  height: 25px;
+  margin-top: 10px;
+  position:fixed;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+
+  
+}
+
+
+.login-page .dont-have-an-account {
+  color: #00000080;
+  font-family: var(--font-family-pt_sans-regular);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  line-height: normal;
+}
+
+.login-page .register-now {
+  color: #9A2828;
+  font-family: var(--font-family-pt_sans-regular);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  left: 190px;
+  letter-spacing: 0.75px;
+  line-height: normal;
+} */

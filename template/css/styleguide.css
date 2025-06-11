@@ -1,0 +1,121 @@
+:root { 
+  --black: #000000;
+  --black-haze: #f6f6f6;
+  --clairvoyant: #4a0e5c;
+  --gray-nurse: #eae8e8;
+  --gray-nurse-2: #e8e8e8;
+  --midnight-pearl: #5f2b6f;
+  --ripe-plum: #3e0a4e;
+  --tundora: #474646;
+  --white: #ffffff;
+  --zircon: #f4fffd;
+ 
+  --font-size-l: 14px;
+  --font-size-m: 13px;
+  --font-size-xl: 15px;
+  --font-size-xxl: 16px;
+  --font-size-xxxl: 24px;
+  --font-size-xxxxl: 25px;
+  --font-size-xxxxxl: 28px;
+ 
+  --font-family-baloo_bhai-regular: "Baloo Bhai-Regular", Helvetica;
+  --font-family-montserrat-bold: "Montserrat-Bold", Helvetica;
+  --font-family-montserrat-extrabold: "Montserrat-ExtraBold", Helvetica;
+  --font-family-montserrat-regular: "Montserrat-Regular", Helvetica;
+  --font-family-montserrat-semibold: "Montserrat-SemiBold", Helvetica;
+  --font-family-pt_sans-bold: "PT Sans-Bold", Helvetica;
+  --font-family-pt_sans-regular: "PT Sans-Regular", Helvetica;
+  --font-family-public_sans-extrabold: "Public Sans-ExtraBold", Helvetica;
+  --font-family-public_sans-extrabolditalic: "Public Sans-ExtraBoldItalic", Helvetica;
+  --font-family-public_sans-medium: "Public Sans-Medium", Helvetica;
+  --font-family-public_sans-regular: "Public Sans-Regular", Helvetica;
+  --font-family-public_sans-thin: "Public Sans-Thin", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.caption {
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.button {
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.b1 {
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.baloobhai-regular-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-baloo_bhai-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.baloobhai-regular-normal-black-14px {
+  color: var(--black);
+  font-family: var(--font-family-baloo_bhai-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.publicsans-regular-normal-white-25px {
+  color: var(--white);
+  font-family: var(--font-family-public_sans-regular);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.publicsans-medium-black-haze-28px {
+  color: var(--black-haze);
+  font-family: var(--font-family-public_sans-medium);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.baloobhai-regular-normal-ripe-plum-64px {
+  color: var(--ripe-plum);
+  font-family: var(--font-family-baloo_bhai-regular);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.publicsans-extra-extra-bold-white-25px {
+  color: var(--white);
+  font-family: var(--font-family-public_sans-extrabold);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.publicsans-extra-extra-bold-black-haze-28px {
+  color: var(--black-haze);
+  font-family: var(--font-family-public_sans-extrabold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.ptsans-regular-normal-tundora-14px {
+  color: var(--tundora);
+  font-family: var(--font-family-pt_sans-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}

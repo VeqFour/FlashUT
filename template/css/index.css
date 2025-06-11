@@ -1,0 +1,380 @@
+
+.index {
+  align-items: flex-start;
+  background-color: var(--black-haze);
+  display: flex;
+  gap: 111px;
+  height: 825px;
+  padding: 31px 17px;
+  width: 1280px;
+}
+
+.index .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 146px;
+  margin-left: 30px;
+  min-height: 600px;
+  width: 550px;
+}
+
+.index .logo {
+  background-image: url(../img/logo.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 90px;
+  width: 380px;
+}
+
+.index .x02-header {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 433px;
+  width: 550px;
+}
+
+
+
+.index .the-design-thinking {
+  color: transparent;
+  font-family: var(--font-family-montserrat-extrabold);
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 100px;
+  margin-left: 0.1px;
+  min-height: 209px;
+  width: 516px;
+  background: linear-gradient(180deg, #C4332F 71%, #5E1817 100%);
+  background-clip: text;
+
+
+}
+
+
+
+.index .overlap-group1 {
+  height: 105px;
+  margin-top: 39px;
+  position: relative;
+  width: 471px;
+}
+
+.index .tools-tutorials-de {
+  color:  #6F6F6F;;
+  font-family: var(--font-family-montserrat-regular);
+  font-size: 24px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 31px;
+  position: absolute;
+  top: 0;
+  width: 470px;
+}
+
+.index .your-gateway-to-smarter-studying {
+  color:  #6F6F6F;;
+  font-family: var(--font-family-montserrat-regular);
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  left: 0;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  top: 69px;
+  white-space: nowrap;
+}
+
+.index .span0-1 {
+  letter-spacing: 0;
+}
+
+.index .signupNow {
+  align-items: flex-start;
+  background-color: #A42927;
+  border-radius: 4px;
+  display: flex;
+  height: 64px;
+  margin-left: -0.9px;
+  margin-top: 17px;
+  min-width: 254px;
+  padding: 21px 1px;
+}
+
+.index .get-started {
+  color: var(--black-haze);
+  font-family: var(--font-family-pt_sans-bold);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+  text-align: center;
+  width: 252px;
+}
+
+.index .flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  margin-top: 10px;
+  margin-left: 40px;
+  min-height: 689px;
+  width: 500px;
+}
+
+.index .button-container {
+  align-items: center;
+  display: flex;
+  gap: 13px;
+  margin-left: 43.0px;
+  min-width: 219px;
+}
+
+.index .signup-button {
+  align-items: flex-start;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 0.05px;
+  overflow: hidden;
+  width: 106px;
+  border-radius: 8px;
+
+}
+.signup-button:hover {
+  background-color: #751F1F;
+
+
+}
+
+.index .singupText {
+  align-items: center;
+  background-color:#A42927;
+  border-radius: 6px;
+  display:inline-block;
+  height: 40px;
+  min-width: 100px;
+  padding: 8px 1px;
+  color: var(--black-haze);
+  font-family: var(--font-family-montserrat-semibold);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 20px;
+  text-align: center;
+}
+
+
+
+.index .login-button {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: #979797;
+  border-radius: 8px;
+  display: flex;
+  height: 40px;
+  overflow: hidden;
+  padding: 8px 1px;
+  width: 100px;
+}
+.login-button:hover {
+  border-color: #979797;
+
+
+}
+.index .loginText {
+  color: #5f5343;
+  font-family: var(--font-family-montserrat-bold);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 20px;
+  text-align: center;
+  width: 100px;
+  display:inline-block;
+
+}
+
+.index .overlap-group2 {
+  height: 607px;
+  position: relative;
+  width: 494px;
+}
+
+.index .bigLogo {
+  height: 139px;
+  left: 30px;
+  object-fit: cover;
+  position: absolute;
+  top: 150px;
+  width: 443px;
+}
+
+
+
+.index .answer {
+  align-items: flex-end;
+  background: linear-gradient(180deg, #BF2F2D 12%, #591615 100%);
+  border-radius: 30px;
+  display: flex;
+  height: 245px;
+  justify-content: flex-end;
+  left: 19px;
+  min-width: 456px;
+  padding: 0.1px 6.9px;
+  position: absolute;
+  top: 362px;
+}
+
+.index .flash-smarter-not-h {
+  letter-spacing: 1.96px;
+  line-height: 40px;
+  min-height: 228px;
+  width: 436px;
+}
+
+.index .span {
+  letter-spacing: 0.55px;
+}
+
+.index .span3 {
+  color: var(--black-haze);
+  font-family: var(--font-family-public_sans-thin);
+  font-size: var(--font-size-xxxxxl);
+  font-weight: 100;
+  letter-spacing: 0.55px;
+}
+
+.index .span11 {
+  color: var(--black-haze);
+  font-family: var(--font-family-public_sans-extrabolditalic);
+  font-size: var(--font-size-xxxxxl);
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.55px;
+}
+.stats-button {
+  background-color: #9A2828;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.stats-button:hover {
+  background-color: #751F1F;
+}
+
+.statsText {
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .index {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .index .flex-col,
+  .index .flex-col-1 {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    gap: 50px;
+  }
+
+  .index .x02-header,
+  .index .overlap-group2,
+  .index .button-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .index .the-design-thinking {
+    font-size: 48px;
+    line-height: 60px;
+    width: 100%;
+  }
+
+  .index .tools-tutorials-de,
+  .index .your-gateway-to-smarter-studying {
+    width: 100%;
+    text-align: center;
+  }
+
+  .index .signupNow {
+    justify-content: center;
+    width: auto;
+  }
+
+  .index .answer {
+    min-width: auto;
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .index .bigLogo {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .index .the-design-thinking {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .index .tools-tutorials-de {
+    font-size: 18px;
+  }
+
+  .index .your-gateway-to-smarter-studying {
+    font-size: 16px;
+  }
+
+  .index .answer {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .index .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .index .signup-button,
+  .index .login-button,
+  .index .stats-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
